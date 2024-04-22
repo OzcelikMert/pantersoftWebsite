@@ -1,0 +1,23 @@
+<section class="e_profile section">
+    <div class="row">
+        <%-include("./avatar")%>
+        <%-include("./details")%>
+    </div>
+
+    <div class="e_tabs list-group list-group-horizontal-sm mb-1 text-center" role="tablist">
+        <a class="list-group-item list-group-item-action active" function="info" data-bs-toggle="list" href="#tab_info" role="tab"><%=lang.profile_info%></a>
+        <a class="list-group-item list-group-item-action" function="social_media" data-bs-toggle="list" href="#tab_social_media" role="tab"><%=lang.social_media%></a>
+    </div>
+    <div class="tab-content mt-3">
+        <div class="tab-pane active show" id="tab_info" role="tabpanel">
+            <div class="row">
+                <%-include("./info")%>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab_social_media" role="tabpanel">
+            <div class="row">
+                <%-include("./social_media")%>
+            </div>
+        </div>
+    </div>
+</section>

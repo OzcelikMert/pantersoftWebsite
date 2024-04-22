@@ -1,0 +1,98 @@
+<div class="modal fade" id="modal_edit" tabindex="-1" aria-hidden="true">
+    <form>
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header text-capitalize">
+                    <h5 class="modal-title">
+                        <span function="modal_edit"><%=lang.service%> <%=lang.edit%></span>
+                        <span function="modal_add"><%=lang.service%> <%=lang.add%></span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <section class="section">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <ul class="list-group">
+                                        <li class="list-group-item p-2">
+                                            <div class="form-group has-icon-left">
+                                                <label><%=lang.title%></label>
+                                                    <div class="position-relative">
+                                                        <input type="text" name="title" class="form-control" placeholder="<%=lang.title%>" required>
+                                                        <div class="form-control-icon">
+                                                            <i class="bi bi-tag"></i>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item p-2 e_content">
+                                            <div class="form-group">
+                                                <label><%=lang.content%></label>
+                                                <div function="content" class="p-0"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><label for="for_blog_fixed" class="bold">Ayarlar</label></li>
+                                        <li class="list-group-item">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" name="status"  type="checkbox" id="for_status" value="1" checked>
+                                                <label class="form-check-label" for="for_status"><%=lang.active%> </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="form-group has-icon-left">
+                                                <label><%=lang.order%></label>
+                                                    <div class="position-relative">
+                                                        <input type="number" name="rank" class="form-control" placeholder="<%=lang.order%>" value="0" required>
+                                                        <div class="form-control-icon">
+                                                            <i class="bi bi-list-ol"></i>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="form-group p-0 mt-2">
+                                        <ul class="list-group">
+                                            <li class=" list-group-item">
+                                                <div class="row">
+                                                    <div class="col-md-12 pb-3">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" id="for_image" value="1" checked>
+                                                            <label class="form-check-label" for="for_image"><%=lang.image%></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="e_image col-md-12">
+                                                        <img alt="image" class="w-100" style="border-radius: 10px;display: none" src="">
+                                                        <button type="button" function="image" class="btn btn-primary w-100 text-capitalize"><%=lang.select_image%> </button>
+                                                    </div>
+                                                    <div class="e_icon col-md-12" style="display: none;">
+                                                        <div class="form-group has-icon-left">
+                                                            <div class="position-relative">
+                                                                <input type="text" name="icon" class="form-control" placeholder="fa fa-icon" required disabled>
+                                                                <div class="form-control-icon">
+                                                                    <i class="bi bi-card-image"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" function="modal_add"><%=lang.add%></button>
+                        <button type="submit" class="btn btn-primary" function="modal_edit"><%=lang.edit%></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="<%=lang._short_code%>">
+<head>
+    <script>
+        const lang = <%-JSON.stringify(lang)%>;
+    </script>
+
+    <link rel="shortcut icon" href="./assets/images/logo/panter.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./head'); -%>
+    <% if (typeof links !== "undefined") { %>
+        <%-links%>
+    <% } %>
+    <title><%=title%></title>
+</head>
+<body>
+    <%- include('../view/tool/preloader/page'); %>
+    <% if (page_name !== "login") { %>
+        <% if (page_name !== "gallery") { %>
+            <%- include('../view/page/gallery/modal'); %>
+        <% } %>
+        <div class="app">
+            <%- include('../view/tool/navbar/sidebar'); -%>
+            <div id="main" class='layout-navbar'>
+                <%- include('../view/tool/navbar/header'); -%>
+                <div id="main-content" class="page-content">
+                    <% sections.forEach(function(section){ %>
+                        <%- include(`../view/page/${section.url}`, section.params) %>
+                    <% }) %>
+                    <%- include('../view/tool/footer/footer'); -%>
+                </div>
+            </div>
+        </div>
+    <% }else { %>
+        <% sections.forEach(function(section){ %>
+            <%- include(`../view/page/${section.url}`, section.params) %>
+        <% }) %>
+    <% } %>
+
+    <%- include('./script'); -%>
+    <% if (typeof scripts !== "undefined") { %>
+        <%-scripts%>
+    <% } %>
+</body>
+</html>

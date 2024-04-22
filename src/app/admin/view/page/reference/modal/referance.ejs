@@ -1,0 +1,72 @@
+<div class="modal fade" id="modal_reference" tabindex="1" type="blog" function="add" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <form>
+            <input type="hidden" name="id" value="0">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Referans Ekle & Düzenle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body" style="max-height: calc(100vh - 200px);">
+                <section class="section">
+                    <div class="form-body">
+                        <div class="row">
+
+                            <div class="form-group has-icon-left">
+                                <label>Firma İsmi</label>
+                                <div class="position-relative">
+                                    <input type="text" name="name" class="form-control" placeholder="Firma İsmi" required="" autocomplete="off">
+                                    <div class="form-control-icon"><i class="bi bi-person"></i></div>
+                                </div>
+                            </div>
+                            <div class="form-group has-icon-left">
+                                <label>Web Site</label>
+                                <div class="position-relative">
+                                    <input type="text" name="url" class="form-control" placeholder="Web Site" required="" autocomplete="off">
+                                    <div class="form-control-icon"><i class="bi bi-person"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group has-icon-left e_image">
+                                <label>Logo</label>
+                                <div class="position-relative">
+                                    <img alt="image" class="w-100" style="border-radius: 10px;display: none;max-height: 300px" src="">
+                                    <button type="button" function="image"  class="btn btn-secondary w-100 mt-1">Sayfa Resmi Seçiniz</button>
+                                    <input type="hidden" name="image" value="" required>
+                                    <div class="form-control-icon"><i class="bi bi-person"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group has-icon-left">
+                                <label>Sıra</label>
+                                <div class="position-relative">
+                                    <input type="number" name="rank" class="form-control" value="0" placeholder="Sıra" required="" autocomplete="off">
+                                    <div class="form-control-icon"><i class="bi bi-person"></i></div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label>Durum</label>
+                                <select class="form-select" name="status" required="">
+                                    <option value="1" selected="">Aktif</option>
+                                    <option value="2">Pasif</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                <button type="submit" class="btn btn-primary e_submit">Ekle</button>
+            </div>
+
+            </form>
+        </div>
+    </div>
+</div>

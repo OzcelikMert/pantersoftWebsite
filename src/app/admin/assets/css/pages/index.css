@@ -1,0 +1,11 @@
+.recent-message.subscriber .avatar {
+    background-color: #435ebe;
+}
+
+.recent-message.subscriber .avatar span {
+    width: 48px;
+    height: 48px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}

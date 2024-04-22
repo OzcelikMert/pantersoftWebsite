@@ -1,0 +1,41 @@
+<div id="auth">
+    <div class="row h-100">
+        <div class="col-lg-5 col-12 position-relative">
+            <div id="auth-left">
+                <h1 class="auth-title"><%=lang.login%></h1>
+                <form id="login-form">
+                    <div class="form-group position-relative has-icon-left mb-4">
+                        <input type="text" name="email" class="form-control form-control-xl" placeholder="<%=lang.email%>">
+                        <div class="form-control-icon">
+                            <i class="bi bi-person"></i>
+                        </div>
+                    </div>
+                    <div class="form-group position-relative has-icon-left mb-4">
+                        <input type="password" name="password" class="form-control form-control-xl" placeholder="<%=lang.password%>">
+                        <div class="form-control-icon">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                    </div>
+                    <div class="form-check form-check-lg d-flex align-items-end">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label text-gray-600" for="flexCheckDefault"><%=lang.remember_me%></label>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5" value="<%=lang.login%>"/>
+                </form>
+                <div class="text-center mt-5 text-lg fs-4">
+                    <!--p><a class="font-bold" href="auth-forgot-password.html">Forgot password?</a>.</p-->
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 d-none d-lg-block">
+            <div id="auth-right">
+                <div class="image-filter"></div>
+                <div class="auth-logo">
+                    <img src="assets/images/logo/logo.png" alt="Logo">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

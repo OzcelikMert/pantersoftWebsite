@@ -1,0 +1,62 @@
+<section id="contact">
+    <div class="container">
+
+        <div class="section-header">
+            <h3>İletişim</h3>
+            <p class="p-1">
+                Sizleri de müşterilerimiz arasında görmekten onur duyarız.
+            </p>
+        </div>
+
+        <div class="row wow fadeInUp">
+            <div class="col-lg-12 contact_us_col">
+                <div class="row">
+                    <div class="col-md-3 info">
+                        <i class="bi bi-envelope"></i>
+                        <p><a href="mailto:help@wabbysoft.com">help@wabbysoft.com</a></p>
+                    </div>
+                    <div class="col-md-3 info">
+                        <i class="bi bi-envelope"></i>
+                        <p><a href="mailto:info@wabbysoft.com">info@wabbysoft.com</a></p>
+                    </div>
+                    <div class="col-md-3 info">
+                        <i class="bi bi-telephone"></i>
+                        <p><a href="tel:905451031057">(+90) 545 103 10 57</a></p>
+                    </div>
+                    <div class="col-md-3 info">
+                        <i class="bi bi-whatsapp"></i>
+                        <p><a href="https://api.whatsapp.com/send?phone=05451031057" target="_blank">Whatsapp İletişim</a></p>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div id="sendmessage">Mesajınız iletilmiştir. Teşekkür ederiz!</div>
+                    <div id="errormessage"></div>
+                    <form action="" method="post" role="form" class="contactForm g-3 row">
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control contact_form_input" id="name" placeholder="İsim" data-rule="minlen:4" data-msg="Lütfen en az 4 karakter giriniz!" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control contact_form_input" name="email" id="email" placeholder="E-posta" data-rule="email" data-msg="Lütfen doğru bir şekilde giriniz!" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control contact_form_input" name="subject" id="subject" placeholder="Konu" data-rule="minlen:4" data-msg="Lütfen en az 4 karakter giriniz!" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control contact_form_input" name="message" rows="5" data-rule="required" data-msg="Lütfen göndermek istediğiniz mesajınızı yazınız!" placeholder="Mesaj"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" title="Gönder">Gönder</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>

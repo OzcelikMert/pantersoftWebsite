@@ -1,0 +1,65 @@
+<div id="setting-general">
+    <h1>Site Ayarları</h1>
+    <form name="general">
+        <div class="form-body">
+
+            <table class="table w-100">
+                <tr>
+                    <td> Site Adı: </td>
+                    <td colspan="2">
+                        <div class="form-group has-icon-left">
+                            <div class="position-relative">
+                                <input type="text" name="name" class="form-control" placeholder="Site Adı" required="" autocomplete="off">
+                                <div class="form-control-icon"><i class="bi bi-person"></i></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Slogan: </td>
+                    <td colspan="2">
+                        <div class="form-group has-icon-left">
+                            <div class="position-relative">
+                                <input type="text" name="slogan" class="form-control" placeholder="Site Sloganı" required="" autocomplete="off">
+                                <div class="form-control-icon"><i class="bi bi-person"></i></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Logo: </td>
+                    <td>
+                        <input type="hidden" hidden-type="image" name="logo" class="form-control" value="" required="" autocomplete="off">
+                        <button type="button" class="e_image_button btn btn-primary">Seç</button>
+                    </td>
+                    <td><img width="200px" id="general_logo" src="http://localhost:8080/admin/assets/images/logo/panter-bg.png" alt="logo"></td>
+                </tr>
+
+                <tr>
+                    <td> Site Sekme iconu: </td>
+                    <td>
+                        <input type="hidden" hidden-type="image" name="favicon" class="form-control" value="" required="" autocomplete="off">
+                        <button type="button" id="general_favicon" class="e_image_button btn btn-primary">Seç</button>
+                    </td>
+                    <td>
+                        <img  width="100px" height="100px" src="http://localhost:8080/admin/assets/images/logo/panter.png" alt="favicon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Durum: </td>
+                    <td colspan="2">
+                        <select class="form-select" name="status" required="">
+                            <option value="1" selected="">Aktif</option>
+                            <option value="2">Pasif</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <button class="btn float-end btn-success">Kaydet</button>
+        </div>
+
+    </form>
+</div>

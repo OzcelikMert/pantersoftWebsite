@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="<%=lang._short_code%>">
+<head>
+    <script>
+        const lang = <%-JSON.stringify(lang)%>;
+    </script>
+
+    <%- include('./head'); -%>
+    <% if (typeof links !== "undefined") { %>
+        <%-links%>
+    <% } %>
+    <title><%=title%></title>
+</head>
+<body>
+    <%- include('../view/tool/preloader/page'); %>
+
+    <%- include('../view/tool/navbar/sidebar'); -%>
+    <% sections.forEach(function(section){ %>
+        <%- include(`../view/page/${section.url}`, section.params) %>
+    <% }) %>
+    <%- include('../view/tool/footer/footer'); -%>
+
+    <%- include('./script'); -%>
+    <% if (typeof scripts !== "undefined") { %>
+        <%-scripts%>
+    <% } %>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<style>
+    .filepond--panel-root {background-color: #ffffff !important;}
+    .note-editor.note-airframe, .note-editor.note-frame{border: 0 !important;}
+</style>
+
+<div class="modal fade" id="modal_add_blog" tabindex="1" type="blog" function="add" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+            <form>
+            <input type="hidden" name="id" value="0">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Blog Ekle & Düzenle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body" style="height: calc(100vh - 200px);">
+                    <section class="section">
+                        <div class="row">
+                            <div class="col-md-8">
+
+                                <div class="form-group">
+                                    <ul class="list-group">
+                                        <li class="list-group-item p-2"><input type="text" class="form-control" id="for_blog_title" name="title" placeholder="Başlık Ekle"></li>
+                                        <li class="list-group-item p-0 e_content">
+                                            <input type="hidden" name="content">
+                                            <div id="summernote"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="form-group">
+                                    <ul class="e_image list-group">
+                                        <li class="list-group-item"><label for="for_blog_fixed" class="bold">Etiketler</label></li>
+                                        <li class="list-group-item">
+                                            <select class="e_select_tags w-100" id="for_st"></select>
+                                            <div class="e_tags pt-2"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group p-0">
+
+                                    <ul class="e_image list-group">
+                                        <li class="list-group-item"><label for="for_blog_fixed" class="bold">Ayarlar</label></li>
+                                        <li class="list-group-item">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" name="is_fixed" type="checkbox" id="for_blog_blog_fixed">
+                                                <label class="form-check-label" for="for_blog_blog_fixed">Sabitle <small>(Blog sayfasında en üste sabitler)</small></label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" name="is_active"  type="checkbox" id="for_blog_is_active" checked>
+                                                <label class="form-check-label" for="for_blog_is_active">Aktif <small>(Aktifligi kapatırsanız bloga erişilmez)</small></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <ul class="e_categories list-group">loading...</ul>
+                                </div>
+
+                                <div class="form-group p-0">
+                                    <ul class="e_image list-group e_blog_image">
+                                        <li class="list-group-item">
+                                            <img alt="image" class="w-100" style="border-radius: 10px;display: none" src="">
+                                            <button type="button" function="image" class="btn btn-secondary w-100 mt-1">Sayfa Resmi Seçiniz</button>
+                                        </li>
+                                        <input type="hidden" name="image" value="">
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                <button type="submit" class="btn btn-primary e_submit">Ekle</button>
+            </div>
+
+            </form>
+        </div>
+    </div>
+</div>

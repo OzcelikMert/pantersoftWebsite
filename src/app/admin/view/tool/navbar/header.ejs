@@ -1,0 +1,96 @@
+<header class='e_header mb-3'>
+    <nav class="navbar navbar-expand navbar-light ">
+        <div class="container-fluid">
+            <a href="#" class="burger-btn d-block">
+                <i class="bi bi-justify fs-3"></i>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown me-1">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class='bi bi-envelope bi-sub fs-4 text-gray-600'></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <h6 class="dropdown-header"><%=lang.messages%></h6>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><%=lang.no_new_message%> &#128532</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class='bi bi-bell bi-sub fs-4 text-gray-600'></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <h6 class="dropdown-header"><%=lang.notifications%></h6>
+                            </li>
+                            <li><a class="dropdown-item"><%=lang.no_new_notification%></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="user-menu d-flex">
+                            <div class="user-name text-end me-3">
+                                <h6 class="e_header_user_name mb-0 text-gray-600"><%=session.admin.name%> <%=session.admin.surname%></h6>
+                                <p class="mb-0 text-sm text-gray-600"><%=session.admin.type_name%></p>
+                            </div>
+                            <div class="user-img d-flex align-items-center">
+                                <div class="avatar avatar-md">
+                                    <img class="e_header_user_image" src="../image/<%=session.admin.image%>" alt="<%=session.admin.name%> <%=session.admin.surname.toUpperCase()%>">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end text-capitalize" aria-labelledby="dropdownMenuButton">
+                        <li>
+                            <h6 class="dropdown-header"><%=lang.hello%>, <span class="e_header_hello_user_name"><%=session.admin.name%></span>!</h6>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="profile.html">
+                                <i class="icon-mid bi bi-person-fill me-2"></i>
+                                <%=lang.my_account%>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="change_password.html">
+                                <i class="icon-mid bi bi-key-fill me-2"></i>
+                                <%=lang.change_password%>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="language.html">
+                                <i class="icon-mid bi bi-translate me-2"></i>
+                                <%=lang.language%>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="support.html">
+                                <i class="icon-mid bi bi-life-preserver me-2"></i>
+                                <%=lang.support%>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0);" function="exit">
+                                <i class="icon-mid bi bi-box-arrow-left me-2"></i>
+                                <%=lang.exit%>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

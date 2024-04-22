@@ -1,0 +1,39 @@
+<div id="setting-captcha" style="display: none">
+    <h1>CAPTCHA Ayarları</h1>
+    <smal>reCAPTCHA türü:v2 Onay Kutusu</smal>
+    <form name="captcha">
+        <div class="form-body">
+            <table class="table w-100">
+                <tr>
+                    <td>Site Anahtarı: </td>
+                    <td colspan="2">
+                        <div class="form-group has-icon-left">
+                            <div class="position-relative">
+                                <input type="text" name="site_key" class="form-control" placeholder="Site Anahtarı yazınız" required="" autocomplete="off">
+                                <div class="form-control-icon"><i class="bi bi-key"></i></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gizi Anahtar: </td>
+                    <td colspan="2">
+                        <div class="form-group has-icon-left">
+                            <div class="position-relative">
+                                <input type="text" name="private_key" class="form-control" placeholder="Gizi Anahtarı yazınız" required="" autocomplete="off">
+                                <div class="form-control-icon"><i class="bi bi-key"></i></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <span>Eğer capta yoksa <a href="https://www.google.com/recaptcha/admin/create">Yeni Oluştur</a></span>
+            <p><span>Açılan sayfadan <b>reCAPTCHA s2 onay kutusu</b> seçiniz!</span></p>
+            </p>
+            <button class="btn float-end btn-success">Kaydet</button>
+        </div>
+
+    </form>
+</div>

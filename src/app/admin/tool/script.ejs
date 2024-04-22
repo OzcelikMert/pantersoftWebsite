@@ -1,0 +1,36 @@
+<script src="../public/vendors/jquery/jquery.min.js"></script>
+<!--script src="../public/vendors/jquery/jquery.serializeObject.js"></script>
+<script src="../public/vendors/jquery/jquery.formautofill.js"></script-->
+<script src="../public/vendors/jquery/jquery.forms.js"></script>
+<script src="../public/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="../public/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="../public/vendors/sweetalert2/sweetalert2.all.min.js"></script>
+<script src="../public/vendors/toastify/toastify.js"></script>
+<script src="../public/vendors/choices.js/choices.min.js"></script>
+<script src="../public/vendors/simple-datatables/simple-datatables.js"></script>
+
+<script src="../pantersoft/browser/operation/server.js"></script>
+<script src="../pantersoft/browser/operation/variable.js"></script>
+<script src="../pantersoft/browser/operation/helper.js"></script>
+<script src="../pantersoft/browser/animation/helper_swal.js"></script>
+<script src="../pantersoft/browser/animation/helper_toastify.js"></script>
+<script src="../pantersoft/browser/setting/timeout.js"></script>
+<script src="../pantersoft/browser/setting/error_code.js"></script>
+
+<script src="../public/helper/table_types.js"></script>
+
+<script src="../service/assets/js/service_page.js"></script>
+<script src="./assets/js/main.js"></script>
+<% if (page_name !== "login") { %>
+    <script>
+        Main.variable.USER_TYPE = <%-session.admin.type%>;
+        Main.variable.USER_PERMISSION = <%-JSON.stringify(session.admin.permission)%>;
+    </script>
+<% }%>
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="../public/vendors/filepond/filepond-plugin-file-validate-size.js"></script>
+<script src="../public/vendors/filepond/filepond-plugin-file-validate-type.js"></script>
+<script src="../public/vendors/filepond/filepond-plugin-image-preview.js"></script>
+<script src="../public/vendors/filepond/filepond.js"></script>
+<script src="./assets/js/pages/gallery.js"></script>

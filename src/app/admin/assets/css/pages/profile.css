@@ -1,0 +1,27 @@
+.image-div-main {
+    position: relative;
+    width: 100%;
+}
+.image-div-main img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-div-hover {
+    width: 100%;
+    position: absolute;
+    background: #001029c7;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: calc(50% - 26px);
+    opacity: 0;
+    transition: .5s ease
+}
+.image-div-hover:hover {
+    opacity: 1;
+}
+.image-div-hover a {
+    font-size: 35px;
+    color: orange;
+}

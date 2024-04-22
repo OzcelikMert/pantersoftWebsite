@@ -1,0 +1,113 @@
+<div class="modal fade" id="modal_edit" tabindex="-1" aria-hidden="true">
+    <form class="text-capitalize">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span function="modal_edit"><%=lang.user%> <%=lang.edit%></span>
+                        <span function="modal_add"><%=lang.user%> <%=lang.add%></span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="form form-vertical">
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-12" function="modal_add">
+                                    <div class="form-group">
+                                        <label><%=lang.type%></label>
+                                        <select class="form-select" name="user_type" required></select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group has-icon-left">
+                                        <label><%= lang.name %></label>
+                                            <div class="position-relative">
+                                                <input type="text" name="name" class="form-control" placeholder="<%= lang.name %>" required>
+                                                <div class="form-control-icon">
+                                                    <i class="bi bi-person"></i>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group has-icon-left">
+                                        <label><%= lang.surname %></label>
+                                        <div class="position-relative">
+                                            <input type="text" name="surname" class="form-control" placeholder="<%= lang.surname %>" required>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-person"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group has-icon-left">
+                                        <label><%= lang.email %></label>
+                                        <div class="position-relative">
+                                            <input type="email" name="email" class="form-control" placeholder="<%= lang.email %>" required>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-envelope"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group has-icon-left">
+                                        <label><%=lang.password%></label>
+                                        <div class="position-relative">
+                                            <input type="password" name="password" class="form-control" placeholder="<%=lang.password%>">
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-lock"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label><%=lang.status%></label>
+                                        <select class="form-select" name="status" required>
+                                            <option value="1" selected><%=lang.active%></option>
+                                            <option value="2"><%=lang.passive%></option>
+                                            <option value="4"><%=lang.ban%></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12" style="display: none;" function="inputs_ban">
+                                    <div class="form-group has-icon-left">
+                                        <label><%=lang.ban_date_end%></label>
+                                        <div class="position-relative">
+                                            <input type="datetime-local" class="form-control" name="ban_date_end" placeholder="<%=lang.ban_date_end%>">
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-calendar-date"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group has-icon-left" style="display:none;" function="inputs_ban">
+                                    <label><%=lang.comment%></label>
+                                    <div class="position-relative">
+                                        <textarea name="ban_comment" class="form-control" placeholder="<%=lang.comment%>" rows="5"></textarea>
+                                        <div class="form-control-icon">
+                                            <i class="bi bi-chat-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label><%=lang.permission%></label>
+                                        <select class="form-select" name="permission" multiple="multiple" tabindex="-1" required></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" function="modal_add"><%=lang.add%></button>
+                    <button type="submit" class="btn btn-primary" function="modal_edit"><%=lang.edit%></button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

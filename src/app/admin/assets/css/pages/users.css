@@ -1,0 +1,60 @@
+.modal-view .card {
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.modal-view .card:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #3950a23b;
+    transform: scaleY(1);
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.modal-view .card:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #3950a2;
+    transform: scaleY(0);
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.modal-view .card:hover::after {
+    transform: scaleY(1)
+}
+
+.modal-view .fonts {
+    font-size: 11px
+}
+
+.modal-view .social-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0
+}
+
+.modal-view .social-list li {
+    padding: 10px;
+    font-size: 19px
+}
+
+.modal-view .buttons button:nth-child(1) {
+    height: 40px
+}
+
+.modal-view .buttons button:nth-child(2) {
+    height: 40px
+}

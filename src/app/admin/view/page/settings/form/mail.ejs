@@ -1,0 +1,73 @@
+<div id="setting-mail" style="display: none">
+    <h1>Mail Ayarları</h1>
+    <form name="mail">
+        <div class="form-body">
+            <table class="table w-100">
+                <tr>
+                    <td>Mailde görünen isim: </td>
+                    <td colspan="2">
+                        <div class="form-group has-icon-left">
+                            <div class="position-relative">
+                                <input type="text" name="name" class="form-control" placeholder="İsim giriniz" required="" autocomplete="off">
+                                <div class="form-control-icon"><i class="bi bi-person"></i></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>E-Posta: </td>
+                    <td colspan="2">
+                        <div class="form-group has-icon-left">
+                            <div class="position-relative">
+                                <input type="email" name="mail" class="form-control" placeholder="E-Posta giriniz" required="" autocomplete="off">
+                                <div class="form-control-icon"><i class="bi bi-mailbox"></i></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Şifre: </td>
+                    <td colspan="2">
+                        <div class="form-group has-icon-left">
+                            <div class="position-relative">
+                                <input type="password" name="password" class="form-control" placeholder="Şifre Giriniz" required="" autocomplete="off">
+                                <div class="form-control-icon"><i class="bi bi-key-fill"></i></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Giden Sunucu & SMTP Port: </td>
+                    <td>
+                        <div class="form-group has-icon-left">
+                            <div class="position-relative">
+                                <input type="text" name="outgoing_server" class="form-control" placeholder="Giden sunucu adresi" required="" autocomplete="off">
+                                <div class="form-control-icon"><i class="bi bi-server"></i></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group has-icon-left">
+                            <div class="position-relative">
+                                <input type="number" value="465" name="port" class="form-control" placeholder="SMTP Portunu giriniz" required="" autocomplete="off">
+                                <div class="form-control-icon"><i class="bi bi-box-arrow-in-right"></i></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                       <button class="e_test_mail btn btn-primary" type="button">Mail gönderme işlemini Test Et</button>
+                    </td>
+                </tr>
+
+            </table>
+
+            <button class="btn float-end btn-success">Kaydet</button>
+        </div>
+
+    </form>
+</div>

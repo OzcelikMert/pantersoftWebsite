@@ -1,0 +1,71 @@
+<section>
+    <div class="row">
+        <div class="col-12 col-xl-12">
+            <div class="list-group list-group-horizontal-sm mb-1 text-center" role="tablist">
+                <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-portfolio" role="tab">Portföy</a>
+                <a class="list-group-item list-group-item-action"        data-bs-toggle="list" href="#list-category" role="tab">Kategoriler</a>
+                <a class="list-group-item list-group-item-action"        data-bs-toggle="list" href="#list-portfolio-deleted" role="tab">Çöp Kutusu</a>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="tab-content text-justify">
+                            <!--blog list -->
+                            <div class="tab-pane fade show active" id="list-portfolio" role="tabpanel">
+                                <section>
+                                    <div class="row">
+                                        <h4 class="fs-4 pe-5">
+                                            <a href="#" class="float-end e_open_modal_portfolio"><span class="badge bg-success fs-5" data-bs-toggle="modal" data-bs-target="#modal_portfolio">+ Yeni Portföy</span></a>
+                                        </h4>
+                                        <div class="col-12 col-xl-12">
+                                            <div class="card" style="min-height: calc(100vh - 250px);">
+                                                <div class="card-body">
+                                                    <div class="e_portfolio_area"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <!--category list -->
+                            <div class="tab-pane fade" id="list-category" role="tabpanel">
+                                <section>
+                                    <div class="row">
+                                        <h4 class="fs-4 pe-5">
+                                            <a href="#" class="float-end e_open_modal_category"><span class="badge bg-success fs-5" data-bs-toggle="modal" data-bs-target="#modal_add_category">+ Yeni Kategori</span></a>
+                                        </h4>
+                                        <div class="col-12 col-xl-12">
+                                            <div class="card" style="min-height: calc(100vh - 250px);">
+                                                <div class="card-body">
+                                                    <div class="e_categories"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <!--deleted blog list -->
+                            <div class="tab-pane fade show" id="list-portfolio-deleted" role="tabpanel">
+                                <section>
+                                    <div class="row">
+                                        <div class="col-12 col-xl-12">
+                                            <div class="card" style="min-height: calc(100vh - 250px);">
+                                                <div class="card-body">
+                                                    <div class="e_trash_portfolio"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
